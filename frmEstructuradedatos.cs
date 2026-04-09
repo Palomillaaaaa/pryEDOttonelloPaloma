@@ -32,18 +32,20 @@ namespace PryEdBarberoB
 
         private void datosDelProgramadorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmDatosDelDesarrollador v = new frmDatosDelDesarrollador();
-            v.ShowDialog();
+           // frmDatosDelDesarrollador v = new frmDatosDelDesarrollador();
+            //v.ShowDialog();
         }
 
         private void mesesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            frmMeses vMeses = new frmMeses();
+            vMeses.ShowDialog();
         }
 
         private void coloresToolStripMenuItem_Click(object sender, EventArgs e)
         {
- 
+            frmColores vColores = new frmColores();
+            vColores.ShowDialog();
         }
 
         private void EstructuraDeDatos_Load(object sender, EventArgs e)
@@ -53,6 +55,13 @@ namespace PryEdBarberoB
 
         private void programacionOrientadaAObjetosToolStripMenuItem_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void carrerasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCarreras vcarreras = new frmCarreras();
+            vcarreras.ShowDialog();
 
         }
     }

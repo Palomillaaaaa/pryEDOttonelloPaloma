@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PryEdBarberoB
 {
-    public partial class frmColores : Form
+    public partial class frmCarreras : Form
     {
-        public frmColores()
+        public frmCarreras()
         {
             InitializeComponent();
         }
@@ -22,20 +22,10 @@ namespace PryEdBarberoB
             clsArchivoTexto x = new clsArchivoTexto();
             x.Grabar(txtNombre.Text);
 
-            clsArchivoTexto X = new clsArchivoTexto();
-            X.NomArchi = "Colores.cvs";
-            X.Grabar(txtNombre.Text);
-            x.Recorrer(lstColores);
-        }
-
-        private void frmColores_Load(object sender, EventArgs e)
-        {
-            btnGrabar.Enabled = true;
-        }
-
-        private void lblNombre_Click(object sender, EventArgs e)
-        {
-
+            clsArchivoTexto objCarreras = new clsArchivoTexto();
+            objCarreras.NomArchi = "Carreras.cvs";
+            objCarreras.Grabar(txtNombre.Text);
+            objCarreras.Recorrer(lstCarrera);
         }
 
         private void txtNombre_TextChanged(object sender, EventArgs e)
@@ -51,7 +41,22 @@ namespace PryEdBarberoB
                 btnGrabar.Enabled = true;
             }
         }
-        private void lstColores_SelectedIndexChanged(object sender, EventArgs e)
+
+        private void frmCarreras_Load(object sender, EventArgs e)
+        {
+            btnGrabar.Enabled = true;
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            clsArchivoTexto objCarreras = new clsArchivoTexto();
+            objCarreras.NomArchi = "Carreras.cvs";
+            objCarreras.Grabar(txtNombre.Text);
+            objCarreras.Recorrer(lstCarrera);
+
+        }
+
+        private void lstCarrera_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
