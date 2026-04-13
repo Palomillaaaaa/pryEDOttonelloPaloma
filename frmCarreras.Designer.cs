@@ -31,7 +31,7 @@
             this.lstCarrera = new System.Windows.Forms.ListBox();
             this.btnGrabar = new System.Windows.Forms.Button();
             this.txtNombre = new System.Windows.Forms.TextBox();
-            this.lblNombre = new System.Windows.Forms.Label();
+            this.lblCarrera = new System.Windows.Forms.Label();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -40,7 +40,7 @@
             this.lstCarrera.FormattingEnabled = true;
             this.lstCarrera.Location = new System.Drawing.Point(28, 101);
             this.lstCarrera.Name = "lstCarrera";
-            this.lstCarrera.Size = new System.Drawing.Size(120, 95);
+            this.lstCarrera.Size = new System.Drawing.Size(172, 82);
             this.lstCarrera.TabIndex = 9;
             this.lstCarrera.SelectedIndexChanged += new System.EventHandler(this.lstCarrera_SelectedIndexChanged);
             // 
@@ -58,18 +58,18 @@
             // 
             this.txtNombre.Location = new System.Drawing.Point(81, 13);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(100, 20);
+            this.txtNombre.Size = new System.Drawing.Size(119, 20);
             this.txtNombre.TabIndex = 6;
             this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
-            // lblNombre
+            // lblCarrera
             // 
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(25, 13);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(47, 13);
-            this.lblNombre.TabIndex = 5;
-            this.lblNombre.Text = "Nombre:";
+            this.lblCarrera.AutoSize = true;
+            this.lblCarrera.Location = new System.Drawing.Point(25, 13);
+            this.lblCarrera.Name = "lblCarrera";
+            this.lblCarrera.Size = new System.Drawing.Size(44, 13);
+            this.lblCarrera.TabIndex = 5;
+            this.lblCarrera.Text = "Carrera:";
             // 
             // btnLimpiar
             // 
@@ -90,7 +90,7 @@
             this.Controls.Add(this.lstCarrera);
             this.Controls.Add(this.btnGrabar);
             this.Controls.Add(this.txtNombre);
-            this.Controls.Add(this.lblNombre);
+            this.Controls.Add(this.lblCarrera);
             this.Name = "frmCarreras";
             this.Text = "frmCarreras";
             this.Load += new System.EventHandler(this.frmCarreras_Load);
@@ -104,7 +104,7 @@
         private System.Windows.Forms.ListBox lstCarrera;
         private System.Windows.Forms.Button btnGrabar;
         private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.Label lblNombre;
+        private System.Windows.Forms.Label lblCarrera;
         private System.Windows.Forms.Button btnLimpiar;
     }
 }

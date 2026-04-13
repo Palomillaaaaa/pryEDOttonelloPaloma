@@ -64,5 +64,17 @@ namespace PryEdBarberoB
             vcarreras.ShowDialog();
 
         }
+
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmClientes vclientes = new frmClientes();
+            vclientes.ShowDialog();
+        }
+
+        private void alumnosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAlumnos vclientes = new frmAlumnos();
+            vclientes.ShowDialog();
+        }
     }
 }

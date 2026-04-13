@@ -9,7 +9,16 @@ namespace PryEdBarberoB
         public String NomArchi = "";
 
 
-    
+        public void Grabar(String cod, String nom, String deu) 
+        {
+            StreamWriter AD = new StreamWriter(NomArchi, true);
+            AD.Write(cod);
+            AD.Write(";");
+            AD.Write(nom);
+            AD.Write(";");
+            AD.WriteLine(deu);
+            AD.Close();
+        }
 
 
         public void Borrar()
@@ -38,6 +47,45 @@ namespace PryEdBarberoB
 
             }
             AD.Close();
+
+                
+        }
+
+        public void Recorrer(ComboBox cmb)
+        {
+
+            String DatoLeido = "";
+            cmb.Items.Clear();
+            StreamReader AD = new StreamReader(NomArchi);
+            DatoLeido = AD.ReadLine();
+            while (DatoLeido != null)
+            {
+                cmb.Items.Add(DatoLeido);
+                DatoLeido = AD.ReadLine();
+
+            }
+            cmb.SelectedIndex = 0;
+            AD.Close();
+        }
+
+
+        public void Recorrer(DataGridView Grilla)
+        {
+
+            
+            String DatoLeido = "";
+            Grilla.Rows.Clear();
+            StreamReader AD = new StreamReader(NomArchi);
+            DatoLeido = AD.ReadLine();
+            while (DatoLeido != null)
+            {
+                Grilla.Rows.Add(DatoLeido.Split(';'));
+                DatoLeido = AD.ReadLine();
+
+            }
+            AD.Close();
+
+           
         }
     }
 }

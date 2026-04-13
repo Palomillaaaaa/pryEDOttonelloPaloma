@@ -129,5 +129,11 @@
   <ItemGroup>
     <None Include="Resources\ft facherita.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\white-horse-running-on-the-sand-created-with-generative-ai-technology-photo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

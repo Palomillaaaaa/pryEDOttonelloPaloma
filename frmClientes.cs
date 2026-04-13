@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +16,32 @@ namespace PryEdBarberoB
         public frmClientes()
         {
             InitializeComponent();
+        }
+
+        private void btnGrabar_Click(object sender, EventArgs e)
+        {
+            clsArchivoTexto objClientes = new clsArchivoTexto();
+            objClientes.NomArchi = "Clientes.csv";
+            objClientes.Grabar (txtCodigo.Text,txtNombre.Text,txtDeuda.Text);
+            objClientes.Recorrer(dgvClientes);
+
+        }
+
+        private void dgvClientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void frmClientes_Load(object sender, EventArgs e)
+        {
+            clsArchivoTexto X = new clsArchivoTexto();
+            X.NomArchi = "Clientes.CSV";
+            if (File.Exists(X.NomArchi)) X.Recorrer (dgvClientes);
+        }
+
+        private void txtCodigo_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

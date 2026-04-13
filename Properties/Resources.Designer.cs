@@ -63,9 +63,29 @@ namespace PryEdBarberoB.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap descarga {
+            get {
+                object obj = ResourceManager.GetObject("descarga", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ft_facherita {
             get {
                 object obj = ResourceManager.GetObject("ft facherita", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap white_horse_running_on_the_sand_created_with_generative_ai_technology_photo {
+            get {
+                object obj = ResourceManager.GetObject("white-horse-running-on-the-sand-created-with-generative-ai-technology-photo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
