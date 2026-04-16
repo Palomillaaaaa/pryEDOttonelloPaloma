@@ -77,6 +77,12 @@
     <Compile Include="frmColores.Designer.cs">
       <DependentUpon>frmColores.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmEstructuraLinealCola.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEstructuraLinealCola.Designer.cs">
+      <DependentUpon>frmEstructuraLinealCola.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMeses.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +105,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmColores.resx">
       <DependentUpon>frmColores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEstructuraLinealCola.resx">
+      <DependentUpon>frmEstructuraLinealCola.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMeses.resx">
       <DependentUpon>frmMeses.cs</DependentUpon>
@@ -134,6 +143,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\descarga.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sddefault.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo-de-pantalla-de-naturaleza-hd-ngdfb9h966h4z3le.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

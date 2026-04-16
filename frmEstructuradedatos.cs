@@ -76,5 +76,11 @@ namespace PryEdBarberoB
             frmAlumnos vAlumnos = new frmAlumnos();
             vAlumnos.ShowDialog();
         }
+
+        private void colaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmEstructuraLinealCola VCola = new frmEstructuraLinealCola();
+            VCola.ShowDialog();
+        }
     }
 }

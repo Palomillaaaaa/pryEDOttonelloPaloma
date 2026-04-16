@@ -63,6 +63,16 @@ namespace PryEdBarberoB.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap b10 {
+            get {
+                object obj = ResourceManager.GetObject("b10", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap descarga {
             get {
                 object obj = ResourceManager.GetObject("descarga", resourceCulture);
@@ -73,9 +83,29 @@ namespace PryEdBarberoB.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fondo_de_pantalla_de_naturaleza_hd_ngdfb9h966h4z3le {
+            get {
+                object obj = ResourceManager.GetObject("fondo-de-pantalla-de-naturaleza-hd-ngdfb9h966h4z3le", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ft_facherita {
             get {
                 object obj = ResourceManager.GetObject("ft facherita", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sddefault {
+            get {
+                object obj = ResourceManager.GetObject("sddefault", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

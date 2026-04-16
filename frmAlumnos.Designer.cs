@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAlumnos));
             this.dgvAlumnos = new System.Windows.Forms.DataGridView();
             this.colCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -145,6 +146,7 @@
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.lblCodigo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmAlumnos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Alumnos";

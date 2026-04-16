@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmClientes));
             this.lblCodigo = new System.Windows.Forms.Label();
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
@@ -36,9 +37,9 @@
             this.lblDeuda = new System.Windows.Forms.Label();
             this.btnGrabar = new System.Windows.Forms.Button();
             this.dgvClientes = new System.Windows.Forms.DataGridView();
-            this.colDeuda = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDeuda = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -114,20 +115,20 @@
             this.dgvClientes.TabIndex = 7;
             this.dgvClientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvClientes_CellContentClick);
             // 
-            // colDeuda
+            // colCodigo
             // 
-            this.colDeuda.HeaderText = "Deuda";
-            this.colDeuda.Name = "colDeuda";
+            this.colCodigo.HeaderText = "Código";
+            this.colCodigo.Name = "colCodigo";
             // 
             // colNombre
             // 
             this.colNombre.HeaderText = "Nombre";
             this.colNombre.Name = "colNombre";
             // 
-            // colCodigo
+            // colDeuda
             // 
-            this.colCodigo.HeaderText = "Código";
-            this.colCodigo.Name = "colCodigo";
+            this.colDeuda.HeaderText = "Deuda";
+            this.colDeuda.Name = "colDeuda";
             // 
             // frmClientes
             // 
@@ -142,6 +143,7 @@
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.lblCodigo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmClientes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Clientes";

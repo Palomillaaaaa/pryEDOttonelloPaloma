@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EstructuraDeDatos));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.sistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.datosDelProgramadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -109,35 +110,35 @@
             // coloresToolStripMenuItem
             // 
             this.coloresToolStripMenuItem.Name = "coloresToolStripMenuItem";
-            this.coloresToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.coloresToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
             this.coloresToolStripMenuItem.Text = "Colores...";
             this.coloresToolStripMenuItem.Click += new System.EventHandler(this.coloresToolStripMenuItem_Click);
             // 
             // mesesToolStripMenuItem
             // 
             this.mesesToolStripMenuItem.Name = "mesesToolStripMenuItem";
-            this.mesesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.mesesToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
             this.mesesToolStripMenuItem.Text = "Meses...";
             this.mesesToolStripMenuItem.Click += new System.EventHandler(this.mesesToolStripMenuItem_Click);
             // 
             // clientesToolStripMenuItem
             // 
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
             this.clientesToolStripMenuItem.Text = "Clientes...";
             this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
             // 
             // alumnosToolStripMenuItem
             // 
             this.alumnosToolStripMenuItem.Name = "alumnosToolStripMenuItem";
-            this.alumnosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.alumnosToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
             this.alumnosToolStripMenuItem.Text = "Alumnos...";
             this.alumnosToolStripMenuItem.Click += new System.EventHandler(this.alumnosToolStripMenuItem_Click);
             // 
             // carrerasToolStripMenuItem
             // 
             this.carrerasToolStripMenuItem.Name = "carrerasToolStripMenuItem";
-            this.carrerasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.carrerasToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
             this.carrerasToolStripMenuItem.Text = "Carreras";
             this.carrerasToolStripMenuItem.Click += new System.EventHandler(this.carrerasToolStripMenuItem_Click);
             // 
@@ -157,6 +158,7 @@
             this.colaToolStripMenuItem.Name = "colaToolStripMenuItem";
             this.colaToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.colaToolStripMenuItem.Text = "Cola...";
+            this.colaToolStripMenuItem.Click += new System.EventHandler(this.colaToolStripMenuItem_Click);
             // 
             // pilaToolStripMenuItem
             // 
@@ -201,9 +203,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::PryEdBarberoB.Properties.Resources.descarga;
+            this.BackgroundImage = global::PryEdBarberoB.Properties.Resources.fondo_de_pantalla_de_naturaleza_hd_ngdfb9h966h4z3le;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1076, 489);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "EstructuraDeDatos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
