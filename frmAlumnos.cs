@@ -21,7 +21,7 @@ namespace PryEdBarberoB
         private void btnGrabar_Click(object sender, EventArgs e)
         {
             clsArchivoTexto objAlumnos= new clsArchivoTexto();
-            objAlumnos.NomArchi = "Clientes.csv";
+            objAlumnos.NomArchi = "Alumnos.csv";
             objAlumnos.Grabar(txtCodigo.Text, txtNombre.Text, cmbCarrera.Text);
             objAlumnos.Recorrer(dgvAlumnos);
 
@@ -30,8 +30,8 @@ namespace PryEdBarberoB
         private void frmAlumnos_Load(object sender, EventArgs e)
         {
             clsArchivoTexto objAlumnos = new clsArchivoTexto();
-            objAlumnos.NomArchi = "Clientes.csv";
-            objAlumnos.Recorrer(dgvAlumnos);
+           objAlumnos.NomArchi = "Alumnos.csv";
+           objAlumnos.Recorrer(dgvAlumnos);
 
             clsArchivoTexto X = new clsArchivoTexto();
             X.NomArchi = "CARRERA.CSV";

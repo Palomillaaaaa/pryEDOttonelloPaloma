@@ -73,8 +73,8 @@ namespace PryEdBarberoB
 
         private void alumnosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmAlumnos vclientes = new frmAlumnos();
-            vclientes.ShowDialog();
+            frmAlumnos vAlumnos = new frmAlumnos();
+            vAlumnos.ShowDialog();
         }
     }
 }

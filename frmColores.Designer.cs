@@ -40,7 +40,7 @@
             this.lstColores.FormattingEnabled = true;
             this.lstColores.Location = new System.Drawing.Point(31, 110);
             this.lstColores.Name = "lstColores";
-            this.lstColores.Size = new System.Drawing.Size(120, 95);
+            this.lstColores.Size = new System.Drawing.Size(172, 121);
             this.lstColores.TabIndex = 9;
             this.lstColores.SelectedIndexChanged += new System.EventHandler(this.lstColores_SelectedIndexChanged);
             // 
@@ -67,14 +67,14 @@
             // 
             this.txtNombre.Location = new System.Drawing.Point(84, 22);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(100, 20);
+            this.txtNombre.Size = new System.Drawing.Size(119, 20);
             this.txtNombre.TabIndex = 6;
             this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(28, 22);
+            this.lblNombre.Location = new System.Drawing.Point(31, 29);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(47, 13);
             this.lblNombre.TabIndex = 5;
@@ -85,7 +85,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(326, 396);
+            this.ClientSize = new System.Drawing.Size(234, 272);
             this.Controls.Add(this.lstColores);
             this.Controls.Add(this.btnGrabar);
             this.Controls.Add(this.btnListar);

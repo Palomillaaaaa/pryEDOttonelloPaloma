@@ -38,7 +38,7 @@
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(30, 27);
+            this.lblNombre.Location = new System.Drawing.Point(33, 34);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(47, 13);
             this.lblNombre.TabIndex = 0;
@@ -48,7 +48,7 @@
             // 
             this.txtNombre.Location = new System.Drawing.Point(86, 27);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(100, 20);
+            this.txtNombre.Size = new System.Drawing.Size(119, 20);
             this.txtNombre.TabIndex = 1;
             this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
@@ -76,14 +76,14 @@
             this.lstMeses.FormattingEnabled = true;
             this.lstMeses.Location = new System.Drawing.Point(33, 115);
             this.lstMeses.Name = "lstMeses";
-            this.lstMeses.Size = new System.Drawing.Size(120, 95);
+            this.lstMeses.Size = new System.Drawing.Size(172, 95);
             this.lstMeses.TabIndex = 4;
             // 
             // frmMeses
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(313, 334);
+            this.ClientSize = new System.Drawing.Size(238, 249);
             this.Controls.Add(this.lstMeses);
             this.Controls.Add(this.btnGrabar);
             this.Controls.Add(this.btnListar);
