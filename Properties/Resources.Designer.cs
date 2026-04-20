@@ -19,7 +19,7 @@ namespace PryEdBarberoB.Properties {
     // a través de una herramienta como ResGen o Visual Studio.
     // Para agregar o quitar un miembro, edite el archivo .ResX y, a continuación, vuelva a ejecutar ResGen
     // con la opción /str o recompile su proyecto de VS.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "18.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -83,6 +83,16 @@ namespace PryEdBarberoB.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Diseño_sin_título {
+            get {
+                object obj = ResourceManager.GetObject("Diseño sin título", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fondo_de_pantalla_de_naturaleza_hd_ngdfb9h966h4z3le {
             get {
                 object obj = ResourceManager.GetObject("fondo-de-pantalla-de-naturaleza-hd-ngdfb9h966h4z3le", resourceCulture);
@@ -96,6 +106,16 @@ namespace PryEdBarberoB.Properties {
         internal static System.Drawing.Bitmap ft_facherita {
             get {
                 object obj = ResourceManager.GetObject("ft facherita", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Gemini_Generated_Image_3wy9ey3wy9ey3wy9 {
+            get {
+                object obj = ResourceManager.GetObject("Gemini_Generated_Image_3wy9ey3wy9ey3wy9", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

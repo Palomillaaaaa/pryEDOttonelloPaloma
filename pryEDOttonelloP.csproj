@@ -59,6 +59,12 @@
     <Compile Include="frmCarreras.Designer.cs">
       <DependentUpon>frmCarreras.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDatos.Designer.cs">
+      <DependentUpon>frmDatos.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmEstructuradedatos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmCarreras.resx">
       <DependentUpon>frmCarreras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDatos.resx">
+      <DependentUpon>frmDatos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmEstructuradedatos.resx">
       <DependentUpon>frmEstructuradedatos.cs</DependentUpon>
@@ -152,6 +161,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\fondo-de-pantalla-de-naturaleza-hd-ngdfb9h966h4z3le.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Diseño sin título.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gemini_Generated_Image_3wy9ey3wy9ey3wy9.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

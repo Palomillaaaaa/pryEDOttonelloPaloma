@@ -37,6 +37,7 @@ namespace PryEdBarberoB
         public void Recorrer(ListBox lstdatos)
         {
             lstdatos.Items.Clear();
+            if (!File.Exists(NomArchi)) return;
             String DatoLeido = "";
             StreamReader AD = new StreamReader(NomArchi);
             DatoLeido = AD.ReadLine();
@@ -55,6 +56,7 @@ namespace PryEdBarberoB
         {
 
             String DatoLeido = "";
+            if (!File.Exists(NomArchi)) return;
             cmb.Items.Clear();
             StreamReader AD = new StreamReader(NomArchi);
             DatoLeido = AD.ReadLine();
@@ -74,6 +76,7 @@ namespace PryEdBarberoB
 
             
             String DatoLeido = "";
+            if (!File.Exists(NomArchi)) return;
             Grilla.Rows.Clear();
             StreamReader AD = new StreamReader(NomArchi);
             DatoLeido = AD.ReadLine();

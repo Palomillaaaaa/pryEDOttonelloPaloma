@@ -32,9 +32,10 @@ namespace PryEdBarberoB
 
         private void datosDelProgramadorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           // frmDatosDelDesarrollador v = new frmDatosDelDesarrollador();
-            //v.ShowDialog();
+           frmDatos vDatos = new frmDatos();
+            vDatos.ShowDialog();
         }
+
 
         private void mesesToolStripMenuItem_Click(object sender, EventArgs e)
         {
