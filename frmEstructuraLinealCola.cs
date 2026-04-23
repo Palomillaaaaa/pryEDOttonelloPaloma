@@ -31,5 +31,46 @@ namespace PryEdBarberoB
         {
 
         }
+
+        clsCola ColaEspera = new clsCola();
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            clsNodo Persona = new clsNodo();
+            Persona.Codigo = Convert.ToInt32(txtNombre.Text);
+            Persona.Nombre = txtNombre.Text;
+            Persona.Tramite = txtTramite.Text;
+
+            ColaEspera.Agregar(Persona);
+            ColaEspera.Recorrer(dvgCola);
+            ColaEspera.Recorrer("Cola.csv");
+            ColaEspera.Recorrer(lstCola);
+
+            txtCodigo.Text = "";
+            txtNombre.Text = "";
+            txtTramite.Text = "";
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            if (ColaEspera.Primero != null) 
+            {
+                lblCodigo.Text = ColaEspera.Primero.Codigo.ToString();
+                lblNombre.Text = ColaEspera.Primero.Nombre;
+                lblTramite.Text = ColaEspera.Primero.Tramite;
+
+                ColaEspera.Eliminar(Persona);
+                ColaEspera.Recorrer(dvgCola);
+                ColaEspera.Recorrer("Cola.csv");
+                ColaEspera.Recorrer(lstCola);
+            }
+            else 
+            {
+                txtCodigo.Text = "";
+                txtNombre.Text = "";
+                txtTramite.Text = "";
+
+            }
+        }
     }
 }
