@@ -91,6 +91,18 @@
     <Compile Include="frmEstructuraLinealCola.Designer.cs">
       <DependentUpon>frmEstructuraLinealCola.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmEstructuraListaDoble.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEstructuraListaDoble.Designer.cs">
+      <DependentUpon>frmEstructuraListaDoble.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListaSimple.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListaSimple.Designer.cs">
+      <DependentUpon>frmListaSimple.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMeses.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +131,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmEstructuraLinealCola.resx">
       <DependentUpon>frmEstructuraLinealCola.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEstructuraListaDoble.resx">
+      <DependentUpon>frmEstructuraListaDoble.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListaSimple.resx">
+      <DependentUpon>frmListaSimple.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMeses.resx">
       <DependentUpon>frmMeses.cs</DependentUpon>
@@ -169,6 +187,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Gemini_Generated_Image_3wy9ey3wy9ey3wy9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LISTA SIMPLE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\listadoble.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
