@@ -48,16 +48,16 @@
             this.lblNombreE = new System.Windows.Forms.Label();
             this.lblCodigoE = new System.Windows.Forms.Label();
             this.grbListaYGrilla = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dvgCola = new System.Windows.Forms.DataGridView();
             this.Código = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Trámite = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.lstCola = new System.Windows.Forms.ListView();
             this.pcbImagen = new System.Windows.Forms.PictureBox();
             this.grbNuevoElemento.SuspendLayout();
             this.grbElementoEliminado.SuspendLayout();
             this.grbListaYGrilla.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dvgCola)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbImagen)).BeginInit();
             this.SuspendLayout();
             // 
@@ -225,26 +225,27 @@
             // 
             // grbListaYGrilla
             // 
-            this.grbListaYGrilla.Controls.Add(this.dataGridView1);
-            this.grbListaYGrilla.Controls.Add(this.listView1);
+            this.grbListaYGrilla.Controls.Add(this.dvgCola);
+            this.grbListaYGrilla.Controls.Add(this.lstCola);
             this.grbListaYGrilla.Location = new System.Drawing.Point(12, 241);
             this.grbListaYGrilla.Name = "grbListaYGrilla";
             this.grbListaYGrilla.Size = new System.Drawing.Size(584, 242);
             this.grbListaYGrilla.TabIndex = 8;
             this.grbListaYGrilla.TabStop = false;
             this.grbListaYGrilla.Text = "Listado en una Lista y una Grilla";
+            this.grbListaYGrilla.Enter += new System.EventHandler(this.grbListaYGrilla_Enter);
             // 
-            // dataGridView1
+            // dvgCola
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dvgCola.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dvgCola.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Código,
             this.Nombre,
             this.Trámite});
-            this.dataGridView1.Location = new System.Drawing.Point(203, 19);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(368, 217);
-            this.dataGridView1.TabIndex = 1;
+            this.dvgCola.Location = new System.Drawing.Point(203, 19);
+            this.dvgCola.Name = "dvgCola";
+            this.dvgCola.Size = new System.Drawing.Size(368, 217);
+            this.dvgCola.TabIndex = 1;
             // 
             // Código
             // 
@@ -261,14 +262,15 @@
             this.Trámite.HeaderText = "Trámite";
             this.Trámite.Name = "Trámite";
             // 
-            // listView1
+            // lstCola
             // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(6, 19);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(177, 217);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.lstCola.HideSelection = false;
+            this.lstCola.Location = new System.Drawing.Point(6, 19);
+            this.lstCola.Name = "lstCola";
+            this.lstCola.Size = new System.Drawing.Size(177, 217);
+            this.lstCola.TabIndex = 0;
+            this.lstCola.UseCompatibleStateImageBehavior = false;
+            this.lstCola.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
             // pcbImagen
             // 
@@ -295,12 +297,13 @@
             this.Name = "frmEstructuraLinealCola";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmEstructuraLinealCola";
+            this.Load += new System.EventHandler(this.frmEstructuraLinealCola_Load);
             this.grbNuevoElemento.ResumeLayout(false);
             this.grbNuevoElemento.PerformLayout();
             this.grbElementoEliminado.ResumeLayout(false);
             this.grbElementoEliminado.PerformLayout();
             this.grbListaYGrilla.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dvgCola)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbImagen)).EndInit();
             this.ResumeLayout(false);
 
@@ -326,8 +329,8 @@
         private System.Windows.Forms.Label lblDatoTramite;
         private System.Windows.Forms.Label lblDatoNombre;
         private System.Windows.Forms.GroupBox grbListaYGrilla;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.DataGridView dvgCola;
+        private System.Windows.Forms.ListView lstCola;
         private System.Windows.Forms.DataGridViewTextBoxColumn Código;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn Trámite;

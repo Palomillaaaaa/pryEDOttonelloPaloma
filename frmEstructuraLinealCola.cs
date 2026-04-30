@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -59,7 +60,7 @@ namespace PryEdBarberoB
                 lblNombre.Text = ColaEspera.Primero.Nombre;
                 lblTramite.Text = ColaEspera.Primero.Tramite;
 
-                ColaEspera.Eliminar(Persona);
+                ColaEspera.Eliminar();
                 ColaEspera.Recorrer(dvgCola);
                 ColaEspera.Recorrer("Cola.csv");
                 ColaEspera.Recorrer(lstCola);
@@ -71,6 +72,24 @@ namespace PryEdBarberoB
                 txtTramite.Text = "";
 
             }
+        }
+
+        private void frmEstructuraLinealCola_Load(object sender, EventArgs e)
+        {
+
+        }
+
+
+      
+
+        private void grbListaYGrilla_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
