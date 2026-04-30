@@ -53,15 +53,15 @@ namespace PryEdBarberoB
         }
 
              public void Recorrer(DataGridView Grilla)
-        {
-            clsNodo aux = Primero;
-            Grilla.Rows.Clear();
-            while (aux != null)
-            {
-                Grilla.Rows.Add(aux.Codigo, aux.Nombre, aux.Tramite);
-                aux = aux.Siguiente;
-            }
-        }
+              {
+                    clsNodo aux = Primero;
+                    Grilla.Rows.Clear();
+                    while (aux != null)
+                    {
+                        Grilla.Rows.Add(aux.Codigo, aux.Nombre, aux.Tramite);
+                        aux = aux.Siguiente;
+                    }
+             }
         public void Recorrer(ListBox Lista)
         {
             clsNodo aux = Primero;
