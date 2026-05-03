@@ -17,6 +17,7 @@ namespace PryEdBarberoB
             set { pri = value; }
         }
 
+        clsPila objPila = new clsPila();
         public void Agregar(clsNodo Nuevo)
         {
             if (Primero == null)

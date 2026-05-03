@@ -18,7 +18,7 @@ namespace PryEdBarberoB
             
         }
 
-        clsPila objPila = new clsPila();
+        clsListaSimple objLista = new clsListaSimple();
         private void frmListaSimple_Load(object sender, EventArgs e)
         {
             
@@ -31,17 +31,56 @@ namespace PryEdBarberoB
             x.Nombre = txtNombre.Text;
             x.Tramite = txtTramite.Text;
 
-            objPila.Agregar(x);
-            objPila.Recorrer(dvgPila);
-            objPila.Recorrer("clsPila.csv");
-            objPila.Recorrer(lstPila);
+            objLista.Agregar(x);
+            objLista.Recorrer(dvgLista);
+            // objLista.Recorrer(cmbLista);
+            // objLista.Recorrer(lstLista);
+            objLista.Recorrer("clsListaSimple.csv");
 
             txtCodigo.Text = "";
             txtNombre.Text = "";
             txtTramite.Text = "";
         }
 
+        private void ValidarDatos()
+        {
+            if (txtCodigo.Text != "" && txtNombre.Text != "" && txtTramite.Text != "")
+            {
+                btnAgregar.Enabled = true;
+            }
+            else 
+            {
+            btnAgregar.Enabled = false;
+            }
+            
+        }
         private void txtCodigo_TextChanged(object sender, EventArgs e)
+        {
+            ValidarDatos();
+        }
+
+        private void lstPila_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblDatoTramite_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+            ValidarDatos();
+        }
+
+        private void txtTramite_TextChanged(object sender, EventArgs e)
+        {
+            ValidarDatos();
+        }
+
+
+        private void btnEliminar_Click(object sender, EventArgs e)
         {
 
         }
