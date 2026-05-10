@@ -199,6 +199,7 @@
             this.btnAgregar.TabIndex = 6;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // txtTramite
             // 
@@ -291,6 +292,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmEstructuraListaDoble";
             this.Text = "frmEstructuraListaDoble";
+            this.Load += new System.EventHandler(this.frmEstructuraListaDoble_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pcbImagen)).EndInit();
             this.grbListaYGrilla.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dvgCola)).EndInit();

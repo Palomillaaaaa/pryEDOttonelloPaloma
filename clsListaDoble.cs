@@ -8,9 +8,24 @@ namespace PryEdBarberoB
 {
     internal class clsListaDoble
     {
-        public void Agregar(clsNodo) 
+        private clsNodo pri;
+        private clsNodo ult;
+        private clsNodo Nvo;
+        
+        public clsNodo Primero
         {
-            if (Priero == null)
+            get { return pri; }
+            set { pri = value; }
+        }
+
+        public clsNodo Ultimo
+        {
+            get { return ult; }
+            set { ult = value; }
+        }
+        public void Agregar(clsNodo Nuevo) 
+        {
+            if (Primero == null)
             {
                 Primero = Nvo;
                 Ultimo = Nvo;
@@ -21,7 +36,7 @@ namespace PryEdBarberoB
                 {
                     Ultimo.Siguiente = Nvo;
                     Nvo.Anterior = Ultimo;
-                    Ultio = Nvo;
+                    Ultimo = Nvo;
                 }
                 else
                 {
