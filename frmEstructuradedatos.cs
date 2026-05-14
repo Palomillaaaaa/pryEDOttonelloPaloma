@@ -83,5 +83,35 @@ namespace PryEdBarberoB
             frmEstructuraLinealCola VCola = new frmEstructuraLinealCola();
             VCola.ShowDialog();
         }
+
+        private void estructurasLinealesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listaDobleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmEstructuraListaDoble VDoble = new frmEstructuraListaDoble();
+            VDoble.ShowDialog();
+        }
+
+        private void listaSimpleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListaSimple VSimple = new frmListaSimple();
+            VSimple.ShowDialog();
+        }
+
+        private void pilaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPILA VPila = new frmPILA();
+            VPila.ShowDialog();
+        }
+
+        private void cpmsultaDToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+    }
     }
 }

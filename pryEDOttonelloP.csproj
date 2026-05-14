@@ -58,6 +58,24 @@
     <Compile Include="frmAlumnos.Designer.cs">
       <DependentUpon>frmAlumnos.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmArbolBinario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmArbolBinario.Designer.cs">
+      <DependentUpon>frmArbolBinario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBdConsultasSql.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBdConsultasSql.Designer.cs">
+      <DependentUpon>frmBdConsultasSql.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBdConsultasTablas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBdConsultasTablas.Designer.cs">
+      <DependentUpon>frmBdConsultasTablas.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCarreras.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +118,12 @@
     <Compile Include="frmEstructuraListaDoble.Designer.cs">
       <DependentUpon>frmEstructuraListaDoble.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmGrafo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGrafo.Designer.cs">
+      <DependentUpon>frmGrafo.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmListaSimple.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +147,15 @@
     <EmbeddedResource Include="frmAlumnos.resx">
       <DependentUpon>frmAlumnos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmArbolBinario.resx">
+      <DependentUpon>frmArbolBinario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBdConsultasSql.resx">
+      <DependentUpon>frmBdConsultasSql.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBdConsultasTablas.resx">
+      <DependentUpon>frmBdConsultasTablas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCarreras.resx">
       <DependentUpon>frmCarreras.cs</DependentUpon>
     </EmbeddedResource>
@@ -143,6 +176,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmEstructuraListaDoble.resx">
       <DependentUpon>frmEstructuraListaDoble.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGrafo.resx">
+      <DependentUpon>frmGrafo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmListaSimple.resx">
       <DependentUpon>frmListaSimple.cs</DependentUpon>
@@ -205,6 +241,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\listadoble.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Binary_tree_%28oriented_digraph%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

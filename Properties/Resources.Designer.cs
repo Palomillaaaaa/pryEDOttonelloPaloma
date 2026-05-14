@@ -73,6 +73,16 @@ namespace PryEdBarberoB.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Binary_tree__oriented_digraph_ {
+            get {
+                object obj = ResourceManager.GetObject("Binary_tree_(oriented_digraph)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap descarga {
             get {
                 object obj = ResourceManager.GetObject("descarga", resourceCulture);
@@ -116,6 +126,16 @@ namespace PryEdBarberoB.Properties {
         internal static System.Drawing.Bitmap Gemini_Generated_Image_3wy9ey3wy9ey3wy9 {
             get {
                 object obj = ResourceManager.GetObject("Gemini_Generated_Image_3wy9ey3wy9ey3wy9", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap images {
+            get {
+                object obj = ResourceManager.GetObject("images", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -26,7 +26,7 @@ namespace PryEdBarberoB
 
             objLista.Agregar(x);
             objLista.Recorrer(dgvListaSimple);
-            objLista.Recorrer(cmbListaSimple);
+            objLista.Recorrer(lstListaSimple);
             objLista.Recorrer(cmbListaSimple);
             objLista.Recorrer("clsListaSimple.csv");
 
