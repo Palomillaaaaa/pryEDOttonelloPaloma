@@ -15,11 +15,12 @@ namespace PryEdBarberoB
         public frmEstructuraListaDoble()
         {
             InitializeComponent();
-        }
 
+        }
+        clsListaDoble objListaDoble = new clsListaDoble();
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
-
+            objListaDoble.RecorrerDes(dgvListaDoble);
         }
 
         private void frmEstructuraListaDoble_Load(object sender, EventArgs e)
@@ -29,7 +30,61 @@ namespace PryEdBarberoB
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
+            clsNodo x = new clsNodo();
+            x.Codigo = Convert.ToInt32(txtCodigo.Text);
+            x.Nombre= txtNombre.Text;
+            x.Tramite = txtTramite.Text;
 
+            objListaDoble.Agregar(x);
+            objListaDoble.Recorrer(lstListaDoble);
+            objListaDoble.Recorrer(dgvListaDoble);
+            objListaDoble.Recorrer(cmbListaDoble);
+            objListaDoble.Recorrer("ListaDoble.csv");
+            txtCodigo.Text = "";
+            txtNombre.Text = "";
+            txtTramite.Text = "";
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+
+            if (objListaDoble != null)
+            {
+                Int32 x = Convert.ToInt32(cmbListaDoble.Text);
+                objListaDoble.Eliminar(x);
+                objListaDoble.Recorrer(dgvListaDoble);
+                objListaDoble.Recorrer(lstListaDoble);
+                objListaDoble.Recorrer(cmbListaDoble);
+
+            }
+            else
+            {
+                MessageBox.Show("La lista esta vacia");
+
+            }
+            btnEliminar.Enabled = false;
+        }
+
+        
+
+        private void rbAscendente_CheckedChanged(object sender, EventArgs e)
+        {
+            objListaDoble.Recorrer(dgvListaDoble);
+        }
+
+        private void cmbListaDoble_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            {
+                if (cmbListaDoble.Text == "")
+                {
+                    btnEliminar.Enabled = false;
+                }
+                else
+                {
+                    btnEliminar.Enabled = true;
+                }
+            }
         }
     }
 }
+

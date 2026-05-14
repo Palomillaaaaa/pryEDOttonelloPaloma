@@ -15,26 +15,19 @@ namespace PryEdBarberoB
         public frmListaSimple()
         {
             InitializeComponent();
-            
         }
-
         clsListaSimple objLista = new clsListaSimple();
-        private void frmListaSimple_Load(object sender, EventArgs e)
-        {
-            
-        }
-
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            clsNodo x  = new clsNodo();
-            x.Codigo = Convert.ToInt32(txtNombre.Text);
+            clsNodo x = new clsNodo();
+            x.Codigo = Convert.ToInt32(txtCodigo.Text);
             x.Nombre = txtNombre.Text;
             x.Tramite = txtTramite.Text;
 
             objLista.Agregar(x);
-            objLista.Recorrer(dvgLista);
-            // objLista.Recorrer(cmbLista);
-            // objLista.Recorrer(lstLista);
+            objLista.Recorrer(dgvListaSimple);
+            objLista.Recorrer(cmbListaSimple);
+            objLista.Recorrer(cmbListaSimple);
             objLista.Recorrer("clsListaSimple.csv");
 
             txtCodigo.Text = "";
@@ -48,25 +41,15 @@ namespace PryEdBarberoB
             {
                 btnAgregar.Enabled = true;
             }
-            else 
+            else
             {
-            btnAgregar.Enabled = false;
+                btnAgregar.Enabled = false;
             }
-            
         }
+
         private void txtCodigo_TextChanged(object sender, EventArgs e)
         {
             ValidarDatos();
-        }
-
-        private void lstPila_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblDatoTramite_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void txtNombre_TextChanged(object sender, EventArgs e)
@@ -79,8 +62,44 @@ namespace PryEdBarberoB
             ValidarDatos();
         }
 
-
         private void btnEliminar_Click(object sender, EventArgs e)
+        {
+
+            if (objLista.Primero != null)
+            {
+                Int32 x = Convert.ToInt32(cmbListaSimple.Text);
+                objLista.Eliminar(x);
+                objLista.Recorrer(dgvListaSimp);
+                objLista.Recorrer(lstListaSimple);
+                objLista.Recorrer(cmbListaSimple);
+
+            }
+            else
+            {
+                MessageBox.Show("La lista esta vacia");
+
+            }
+            btnEliminar.Enabled = false;
+        }
+
+        private void frmListaSimple_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbLista_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbListaSimple.Text == "")
+            {
+                btnEliminar.Enabled = false;
+            }
+            else
+            {
+                btnEliminar.Enabled = true;
+            }
+        }
+
+        private void dgvListaSimple_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
