@@ -32,7 +32,7 @@ namespace PryEdBarberoB
 
         private void datosDelProgramadorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           frmDatos vDatos = new frmDatos();
+            frmDatos vDatos = new frmDatos();
             vDatos.ShowDialog();
         }
 
@@ -112,6 +112,6 @@ namespace PryEdBarberoB
 
         }
     }
-    }
-    }
+
 }
+
