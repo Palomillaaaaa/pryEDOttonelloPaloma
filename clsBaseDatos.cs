@@ -1,0 +1,121 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.OleDb;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace PryEdBarberoB
+{
+    internal class clsBaseDatos
+    {
+        class clsBaseDatos
+        {
+            // ──────────────────────────────────────────
+            // CAMPOS PRIVADOS
+            // ──────────────────────────────────────────
+
+            private OleDbConnection conexion = new OleDbConnection();
+            private OleDbCommand comando = new OleDbCommand();
+            private OleDbDataAdapter adaptador = new OleDbDataAdapter();
+
+            private string CadenaConexion1 = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=Libreria.mdb";
+            private string CadenaConexion2 = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=Libreria.mdb";
+            //private string varSQL = "Select * from Libro";
+
+            // ──────────────────────────────────────────
+            // LISTAR (tabla fija: Libro)
+            // ──────────────────────────────────────────
+
+            public void Listar(DataGridView Grilla)
+            {
+                try
+                {
+                    conexion.ConnectionString = CadenaConexion1;
+                    conexion.Open();
+
+                    comando.Connection = conexion;
+                    comando.CommandType = CommandType.TableDirect;
+                    comando.CommandText = "Libro";
+
+                    DataSet Ds = new DataSet();
+                    adaptador = new OleDbDataAdapter(comando);
+                    adaptador.Fill(Ds, "Libro");
+
+                    Grilla.DataSource = null;
+                    Grilla.DataSource = Ds.Tables["Libro"];
+
+                    conexion.Close();
+                }
+                catch (Exception x)
+                {
+                    MessageBox.Show(x.ToString());
+                }
+            }
+
+            // ──────────────────────────────────────────
+            // LISTAR (tabla dinámica)
+            // ──────────────────────────────────────────
+
+            public void Listar(String tabla, DataGridView Grilla)
+            {
+                try
+                {
+                    conexion.ConnectionString = CadenaConexion1;
+                    conexion.Open();
+
+                    comando.Connection = conexion;
+                    comando.CommandType = CommandType.TableDirect;
+                    comando.CommandText = tabla;
+
+                    DataSet DS = new DataSet();
+                    adaptador = new OleDbDataAdapter(comando);
+                    adaptador.Fill(DS, tabla);
+
+                    Grilla.DataSource = null;
+                    Grilla.DataSource = DS.Tables[tabla];
+
+                    conexion.Close();
+                }
+                catch (Exception e)
+                {
+                    MessageBox.Show(e.Message);
+                    conexion.Close();
+                }
+            }
+
+            // ──────────────────────────────────────────
+            // LISTAR (instrucción SQL)
+            // ──────────────────────────────────────────
+
+            public void Listar(DataGridView Grilla, String varInstruccionSQL)
+            {
+                try
+                {
+                    conexion.ConnectionString = CadenaConexion1;
+                    conexion.Open();
+
+                    comando.Connection = conexion;
+                    comando.CommandType = CommandType.Text;
+                    comando.CommandText = varInstruccionSQL;
+
+                    adaptador = new OleDbDataAdapter(comando);
+                    DataSet DS = new DataSet();
+                    adaptador.Fill(DS, "Resultado");
+
+                    Grilla.DataSource = null;
+                    Grilla.DataSource = DS.Tables["Resultado"];
+
+                    conexion.Close();
+                }
+                catch (Exception e)
+                {
+                    MessageBox.Show(e.Message);
+                    conexion.Close();
+                }
+            }
+        }
+    }
+}

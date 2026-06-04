@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="clsArbolBinario.cs" />
     <Compile Include="clsArchivoTexto.cs" />
+    <Compile Include="clsBaseDatos.cs" />
     <Compile Include="clsCola.cs" />
     <Compile Include="clsGrafo.cs" />
     <Compile Include="clsListaDoble.cs" />
@@ -66,6 +67,12 @@
     <Compile Include="frmArbolBinario.Designer.cs">
       <DependentUpon>frmArbolBinario.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmBasedatoRepaso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBasedatoRepaso.Designer.cs">
+      <DependentUpon>frmBasedatoRepaso.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmBdConsultasSql.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +90,12 @@
     </Compile>
     <Compile Include="frmCarreras.Designer.cs">
       <DependentUpon>frmCarreras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultadeUna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultadeUna.Designer.cs">
+      <DependentUpon>frmConsultadeUna.cs</DependentUpon>
     </Compile>
     <Compile Include="frmDatos.cs">
       <SubType>Form</SubType>
@@ -152,6 +165,9 @@
     <EmbeddedResource Include="frmArbolBinario.resx">
       <DependentUpon>frmArbolBinario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmBasedatoRepaso.resx">
+      <DependentUpon>frmBasedatoRepaso.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmBdConsultasSql.resx">
       <DependentUpon>frmBdConsultasSql.cs</DependentUpon>
     </EmbeddedResource>
@@ -160,6 +176,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmCarreras.resx">
       <DependentUpon>frmCarreras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultadeUna.resx">
+      <DependentUpon>frmConsultadeUna.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDatos.resx">
       <DependentUpon>frmDatos.cs</DependentUpon>
