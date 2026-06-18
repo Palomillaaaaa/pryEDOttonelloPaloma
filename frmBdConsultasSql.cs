@@ -16,5 +16,36 @@ namespace PryEdBarberoB
         {
             InitializeComponent();
         }
+
+        private void btnListar_Click(object sender, EventArgs e)
+        {
+            clsBaseDatos sql = new clsBaseDatos();
+            sql.Listar(dgvConsultaSQL, txtConsultaSQL.Text);
+        }
+
+        private void frmBdConsultaSql_Load(object sender, EventArgs e)
+        {
+            btnListar.Enabled = false;
+        }
+
+        private void txtSQL_TextChanged(object sender, EventArgs e)
+        {
+            if (txtConsultaSQL.Text != "") btnListar.Enabled = true;
+            else btnListar.Enabled = false;
+
+        private void dgvConsultaSQL_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void txtConsultaSQL_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -1,0 +1,102 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace PryEdBarberoB
+{
+    public partial class frmBdOperaciones : Form
+    {
+        public frmBdOperaciones()
+        {
+            InitializeComponent();
+        }
+        clsBaseDatos sql = new clsBaseDatos();
+
+        private void btnProSimple_Click(object sender, EventArgs e)
+        {
+            String varSql = "SELECT TITULO " +
+                "FROM LIBRO " +
+                "ORDER BY 1 DESC";
+            sql.Listar(dgvBdOperaciones, varSql);
+        }
+
+        private void btnProMultiAtributo_Click(object sender, EventArgs e)
+        {
+            String varSql = "SELECT TITULO, AÑO " +
+                "FROM LIBRO " +
+                "ORDER BY TITULO ASC";
+            sql.Listar(dgvBdOperaciones, varSql);
+        }
+
+        private void btnJuntar_Click(object sender, EventArgs e)
+        {
+            String varSql = "SELECT Libro.Titulo, Autor.Nombre " +
+                "FROM Libro INNER JOIN Autor " +
+                "ON Libro.IdAutor = Autor.IdAutor";
+            sql.Listar(dgvBdOperaciones, varSql);
+        }
+
+        private void btnSelSimple_Click(object sender, EventArgs e)
+        {
+            String varSql = "SELECT TITULO " +
+                "FROM LIBRO " +
+                "WHERE IDPAIS = 3 ";
+            sql.Listar(dgvBdOperaciones, varSql);
+        }
+
+        private void btnSelMultiAtributo_Click(object sender, EventArgs e)
+        {
+            String varSql = "SELECT TITULO, PRECIO " +
+                "FROM LIBRO " +
+                "WHERE PRECIO > 400 " +
+                "ORDER BY 1 DESC";
+            sql.Listar(dgvBdOperaciones, varSql);
+        }
+
+        private void btnConvolucion_Click(object sender, EventArgs e)
+        {
+            String varSql = "SELECT * " +
+                "FROM (SELECT * FROM LIBRO WHERE idIdioma > 1) as X " +
+                "WHERE IdPais = 2 ";
+            sql.Listar(dgvBdOperaciones, varSql);
+        }
+
+        private void btnUnion_Click(object sender, EventArgs e)
+        {
+            String varSql = "SELECT * " +
+                "FROM LIBRO " +
+                "WHERE IDIDIOMA = 1 " +
+                "UNION " +
+                "SELECT * " +
+                "FROM LIBRO " +
+                "WHERE IDIDIOMA = 2";
+            sql.Listar(dgvBdOperaciones, varSql);
+        }
+
+        private void btnInterseccion_Click(object sender, EventArgs e)
+        {
+            String varSql = "SELECT * FROM LIBRO " +
+                "WHERE IDIDIOMA = 2 AND " +
+                "IDLIBRO IN " +
+                "(SELECT IDLIBRO FROM LIBRO WHERE IDPAIS = 3) " +
+                "ORDER BY 1 ASC";
+            sql.Listar(dgvBdOperaciones, varSql);
+        }
+
+        private void btnDiferencia_Click(object sender, EventArgs e)
+        {
+            String varSql = "SELECT * FROM LIBRO " +
+                "WHERE IDIDIOMA = 2 AND " +
+                "IDIDIOMA NOT IN " +
+                "(SELECT IDLIBRO FROM LIBRO WHERE IDPAIS = 3) " +
+                "ORDER BY 1 ASC";
+            sql.Listar(dgvBdOperaciones, varSql);
+        }
+    }
+}

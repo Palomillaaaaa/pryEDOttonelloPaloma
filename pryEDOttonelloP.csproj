@@ -55,6 +55,12 @@
     <Compile Include="clsListaSimple.cs" />
     <Compile Include="clsNodo.cs" />
     <Compile Include="clsPila.cs" />
+    <Compile Include="fmrBdConsultaTablas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmrBdConsultaTablas.Designer.cs">
+      <DependentUpon>fmrBdConsultaTablas.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAlumnos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,12 @@
     </Compile>
     <Compile Include="frmBdConsultasTablas.Designer.cs">
       <DependentUpon>frmBdConsultasTablas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBdOperaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBdOperaciones.Designer.cs">
+      <DependentUpon>frmBdOperaciones.cs</DependentUpon>
     </Compile>
     <Compile Include="frmCarreras.cs">
       <SubType>Form</SubType>
@@ -159,6 +171,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fmrBdConsultaTablas.resx">
+      <DependentUpon>fmrBdConsultaTablas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAlumnos.resx">
       <DependentUpon>frmAlumnos.cs</DependentUpon>
     </EmbeddedResource>
@@ -173,6 +188,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmBdConsultasTablas.resx">
       <DependentUpon>frmBdConsultasTablas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBdOperaciones.resx">
+      <DependentUpon>frmBdOperaciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCarreras.resx">
       <DependentUpon>frmCarreras.cs</DependentUpon>

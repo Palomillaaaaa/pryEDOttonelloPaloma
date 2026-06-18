@@ -11,10 +11,7 @@ namespace PryEdBarberoB
 {
     internal class clsBaseDatos
     {
-        class clsBaseDatos
-        {
-            // ──────────────────────────────────────────
-            // CAMPOS PRIVADOS
+            
             // ──────────────────────────────────────────
 
             private OleDbConnection conexion = new OleDbConnection();
@@ -25,8 +22,7 @@ namespace PryEdBarberoB
             private string CadenaConexion2 = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=Libreria.mdb";
             //private string varSQL = "Select * from Libro";
 
-            // ──────────────────────────────────────────
-            // LISTAR (tabla fija: Libro)
+            
             // ──────────────────────────────────────────
 
             public void Listar(DataGridView Grilla)
@@ -55,8 +51,7 @@ namespace PryEdBarberoB
                 }
             }
 
-            // ──────────────────────────────────────────
-            // LISTAR (tabla dinámica)
+           
             // ──────────────────────────────────────────
 
             public void Listar(String tabla, DataGridView Grilla)
@@ -86,9 +81,7 @@ namespace PryEdBarberoB
                 }
             }
 
-            // ──────────────────────────────────────────
-            // LISTAR (instrucción SQL)
-            // ──────────────────────────────────────────
+            //────────────────────────────────
 
             public void Listar(DataGridView Grilla, String varInstruccionSQL)
             {
@@ -118,4 +111,3 @@ namespace PryEdBarberoB
             }
         }
     }
-}

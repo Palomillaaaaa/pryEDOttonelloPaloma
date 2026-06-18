@@ -62,6 +62,10 @@ namespace PryEdBarberoB
             }
         }
 
+        private void frmPILA_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

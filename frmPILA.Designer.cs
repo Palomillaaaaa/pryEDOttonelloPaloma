@@ -314,6 +314,7 @@
             this.Controls.Add(this.grbNuevoElemento);
             this.Name = "frmPILA";
             this.Text = "frmPILA";
+            this.Load += new System.EventHandler(this.frmPILA_Load);
             this.grbListaYGrilla.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPila)).EndInit();
             this.grbElementoEliminado.ResumeLayout(false);
